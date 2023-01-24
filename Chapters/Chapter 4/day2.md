@@ -1,21 +1,21 @@
 # Chapter 4 - Day 2
 
-## 1. Instead of console logging the result after the script executes, I want you to:
+### 1. Instead of console logging the result after the script executes, I want you to:
 - Make a new variable named greeting using useState
 - Set the greeting variable to the response of the script call
 - Create a `<p>` tag after the `<div className={styles.flex}>` tag
 - Put the greeting variable inside of that `<p>` tag. This will make the result of your script show on your webpage! It should look something like this.
 
-## 2a. I deployed a contract called SimpleTest to an account with an address of 0x6c0d53c676256e8c. I want you to make a button that, when clicked, executes a script to read the number variable from that contract. If you're curious, you can see the contract here: https://flow-view-source.com/testnet/account/0x6c0d53c676256e8c/contract/SimpleTest
+### 2a. I deployed a contract called SimpleTest to an account with an address of 0x6c0d53c676256e8c. I want you to make a button that, when clicked, executes a script to read the number variable from that contract. If you're curious, you can see the contract here: https://flow-view-source.com/testnet/account/0x6c0d53c676256e8c/contract/SimpleTest
 
-## Submit all the code you used to call the script, and the result of the script.
+### Submit all the code you used to call the script, and the result of the script.
 
-## 2b. Then, I want you to remove the button, and make the script execute every time the page refreshes.
+### 2b. Then, I want you to remove the button, and make the script execute every time the page refreshes.
 
-## Submit all the code you used to do this.
+### Submit all the code you used to do this.
 
 ### 1. code:
-`
+``` javascript 
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Nav from '@/components/Nav.jsx'
@@ -78,10 +78,10 @@ export default function Home() {
     </div>
   )
 }
-`
+```
 
 ### 2a. code: 
-`
+``` javascript
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Nav from '@/components/Nav.jsx'
@@ -161,10 +161,11 @@ export default function Home() {
     </div>
   )
 } 
-`
+```
 
 ### 2b. code:
-`import Head from 'next/head'
+``` javascript
+import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Nav from '@/components/Nav.jsx'
 import { useState, useEffect } from 'react'
@@ -246,4 +247,4 @@ export default function Home() {
   )
 }
 
-`
+```
